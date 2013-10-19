@@ -1,0 +1,2 @@
+run file_collector -d c:\Users -r -f *.doc|*.pdf|*.pst|*.pstx|*.eml|*.emlx|*.xls|*.docx|*.xlsx|*.csv -o /tmp/files
+run file_collector -i /tmp/files -l /tmp/collected

