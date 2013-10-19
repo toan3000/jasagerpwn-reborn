@@ -18,7 +18,7 @@ pineapple_ip="172.16.42.1"
  # SSH Password for pinepple (for remote command execution)
 pineapple_password="pineapple"
  # Mac address of pineapple
-pineapple_mac="00:13:37:a5:08:1c"
+pineapple_mac="00:11:22:33:44:55"
 
 # [Payload Information]
 # Custom Windows Payload (blank will default to metasploit)
@@ -44,9 +44,6 @@ webcam -f -p /tmp/collected
 channels="1,2,3,4,5,6,7,8,9,10,11"
 # MDK3 Deauthentication Config File (dont change file location)
 echo "${pineapple_mac}
-00:C0:CA:3E:D9:DB
-AE:22:0B:33:74:F9
-40:0E:85:02:31:6B
 00:00:00:00:00:00
 FF:FF:FF:FF:FF:FF" > /tmp/deauth.conf
 
