@@ -33,19 +33,27 @@ function cleanup(){
   exit 1
 }
 
+# Update Code via SVN
+function update(){
+  svn cleanup
+  svn up
+  exit 0
+}
+
 # Print help
 function help(){
  
  echo "
  JasagerPwn[Reborn] Pineapple Attack Vector Script
-      - Version ${version} - Revision ${rev} -
+             - Version ${version} -
       
  (C)opyright 2013 Leg3nd @ www.https://leg3nd.me
 
   Usage: bash jasagerPwn 
 
   Options:
-   -? / -h    :  Help Screen and Switches. More Information In top of script.
+   -h         :  Help Screen and Switches. More Information In top of script.
+   -u         :  Update JasagerPwn.
    -i         :  Pineapple Interface [EG: wlan0]
    -m         :  Mac Payload (.pkg) [For Fake Update]
    -w         :  Windows Payload (.exe) [ For Fake Update / Java Injection]

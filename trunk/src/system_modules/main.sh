@@ -13,25 +13,27 @@ attacking="0"
 our_ip=$(ifconfig ${pineapple_interface} | grep "inet addr" | awk -F\: '{print $2}' | awk '{print $1}')
 ###########################################
 
-function main(){
-  # Parse command line options
-  while getopts "g:p:m:h?" OPTIONS; do
-    case ${OPTIONS} in
-      w     ) export windows_payload=$OPTARG;;
-      m     ) export mac_payload=$OPTARG;;
-      g     ) export pineapple_interface=$OPTARG;;
-      ?|h   ) help;;
-      *     ) echo "[-] Unknown option.";;   # DEFAULT
-    esac
-  done
 
-  ############ Module Imports #
-  # Source our utility functions
-  source src/system_modules/utility.sh
-  # Source our dependency checking module
-  source src/system_modules/dependencies.sh
-  # Get our attacks from the attack_modules directory
+############ Module Imports #
+# Source our utility functions
+source src/system_modules/utility.sh
+# Source our dependency checking module
+source src/system_modules/dependencies.sh
+# Get our attacks from the attack_modules directory
 
+# Parse command line options
+while getopts "i:p:m:uh" OPTIONS; do
+  case ${OPTIONS} in
+    w     ) export windows_payload=${OPTARG};;
+    m     ) export mac_payload=${OPTARG};;
+    i     ) export pineapple_interface=${OPTARG};;
+    u     ) update;;
+    h     ) help;;
+    *     ) echo "[-] Unknown option.";;
+  esac
+done
+
+function main(){  
   # Check our dependencies
   check_deps
   
