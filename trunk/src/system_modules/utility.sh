@@ -47,7 +47,7 @@ function help(){
  JasagerPwn[Reborn] Pineapple Attack Vector Script
              - Version ${version} -
       
- (C)opyright 2013 Leg3nd @ www.https://leg3nd.me
+ (C)opyright 2013 Leg3nd @ https://leg3nd.me
 
   Usage: bash jasagerPwn 
 
