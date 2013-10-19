@@ -1,0 +1,104 @@
+﻿h1 {
+	font: normal 250%/125% "Segoe UI Light", "Segoe UI", Arial, Verdana, Tahoma, sans-serif,"Microsoft JhengHei","Microsoft YaHei","Meiryo","Malgun Gothic";
+	color: #4f4f4f;
+}
+h2, h3 {
+	font: normal 216%/108% "Segoe UI","Segoe UI Light", Arial, Verdana, Tahoma, sans-serif,"Microsoft JhengHei","Microsoft YaHei","Meiryo","Malgun Gothic";
+	color: #4f4f4f;
+}
+.hpMst_Footer {
+	padding-top: 40px !important;
+}
+#aspnetForm div.hpMst_StageInner div.hpGrd_Grid div.ALT_List1 {
+	background-color: #fff !important;
+	color: #4f4f4f !important;
+	border-color: #fff !important;
+}
+#aspnetForm div.hpMst_StageInner div.hpGrd_Grid div.ALT_List1 a {
+	color: #0060a6 !important;
+}
+.hpAcc_instruction.hpAcc .hpLst_body{
+	border-bottom:0px !important;
+	border-bottom-color: #ffffff !important;
+}
+.hpLst_style1{
+  color: #ff0000;
+  padding-left: 100px;
+  margin-bottom:10px !important;	
+  padding-bottom: 30px !important;
+}
+.hpLst_style5, .hpLst_style5.hpLst {
+	padding-top:26px !important;
+}
+.hpLst.hpLst_style6{
+	margin-right:60px !important;
+	width:240px !important;
+}
+.hpLst_style8 {
+	padding-left:10px !important;
+}
+.hpLst_style8.hpLst {
+	padding-top: 20px !important;
+}
+.hpLst_style8.hpLst{
+	padding-right:20px !important;
+	padding-bottom:20px !important;
+	padding-left:20px !important;
+}
+.hpList_style8 a.hpFeat_Link:hover{
+	color:#ffffff !important;
+	text-decoration:underline !important;
+}
+.hpLst_style9, hpLst_style9.hpLst{
+	padding-top:0px !important;
+	position: relative;
+	top:-9px !important;
+}
+.hpLst_style11.hpLst{
+  margin-top:-45px !important;
+}
+.hpLst_style12.hpLst h5.hpFeat_Title {
+	 font-size:17px;font-weight:normal;
+}	 
+.hpLst_style12.hpLst{
+	margin-top:-30px;
+} 
+.hpLst_style13.hpLst h5.hpFeat_Title {
+	 font-size:17px;font-weight:normal;
+}
+.caption {
+	font: normal "Segoe UI";
+}
+.icons{
+	background-color:#ffffff !important;
+	background-image:none !important; 
+	border-color:#ffffff !important;
+}
+h2.icons {
+	font: normal 215%/85% "Segoe UI Light", "Segoe UI", Arial, Verdana, Tahoma, sans-serif,"Microsoft JhengHei","Microsoft YaHei","Meiryo","Malgun Gothic";
+	color: #4f4f4f;
+}
+.icons li{
+	text-align:center !important; 
+	padding-right:auto !important;
+	padding-bottom:6px !important;
+	padding-left:auto !important;
+}
+.hpAd{
+	margin-top:10px !important;
+	margin-bottom:20px !important;
+}
+div.msstore
+{
+    padding-left: 0;
+}
+
+div.msstore_clip ul li
+{
+    padding-left: 0;
+}
+
+div.msstore_clip ul li table td
+{
+    padding-right: 5px;
+}

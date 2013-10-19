@@ -1,0 +1,5 @@
+run enum_chrome
+run enum_firefox
+run post/windows/gather/enum_ie
+run enum_putty
+run post/windows/gather/bitcoin_jacker
