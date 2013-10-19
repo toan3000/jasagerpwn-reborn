@@ -57,29 +57,6 @@ Compatibility / Troubleshooting
 - Any "injection" based attack vector will require the "CodeInject" infusion that is available
   in the pineapple bar. This include: Java Applet Injector, Click Jacking, and BeEf Hook.
 
--------------------
-Included Payloads
--------------------
-I have included 2 of my most successful and effecient payloads for your use. One for Mac OSX,
-and one for Windows - both will completely bypass signature based anti-virus and most behavioral
-HIPS as well.
-
-Please reference the README in payloads/payloads_README.md for more information.
-
---------------------------
-Developing Attack Modules 
---------------------------
-- This script was created in a modular architecture, allowing for relativley simple expansion
-  of attack vectors. If you are interested in creating your own module, 
-
-- Use the "attack_module_example.sh located in the resources/ folder for an example reference.
-
-- There are just a few requirements when developing the modules:
-	1: If you're making a de-authentication module - use "deauth" or "dos" in the description string.
-	2: You MUST have a "start_SOMETHING" and "stop_SOMETHING" function in that format (SOMETHING is arbitrary)
-	3: You MUST have a UNIQUE "title", "description", and "bindings" variables.
-	4: I recommend editing the src/system_modules/utility.sh - cleanup() function to cleanup after your module.
-
 -----------------------
 Attack Vector Modules:
 -----------------------
@@ -116,8 +93,33 @@ Attack Vector Modules:
 	  note that this works best if you are close to the clients. As a result,
 	  this will have slightly better average range effectivness.
 
+
+-------------------
+Included Payloads
+-------------------
+I have included 2 of my most successful and effecient payloads for your use. One for Mac OSX,
+and one for Windows - both will completely bypass signature based anti-virus and most behavioral
+HIPS as well.
+
+Please reference the README in payloads/payloads_README.md for more information.
+
+--------------------------
+Developing Attack Modules 
+--------------------------
+- This script was created in a modular architecture, allowing for relativley simple expansion
+  of attack vectors. If you are interested in creating your own module, 
+
+- Use the "attack_module_example.sh located in the resources/ folder for an example reference.
+
+- There are just a few requirements when developing the modules:
+	1: If you're making a de-authentication module - use "deauth" or "dos" in the description string.
+	2: You MUST have a "start_SOMETHING" and "stop_SOMETHING" function in that format (SOMETHING is arbitrary)
+	3: You MUST have a UNIQUE "title", "description", and "bindings" variables.
+	4: I recommend editing the src/system_modules/utility.sh - cleanup() function to cleanup after your module.
+
 ---------------------
 Questions / Problems
 ---------------------
-- Forum Post: 
-- Google Code (Bug Report): https://code.google.com/p/jasagerpwn-reborn/
+- Forum Post: https://forums.hak5.org/index.php?/forum/78-mark-v/
+- Google Code: https://code.google.com/p/jasagerpwn-reborn/
+- Bug Submission: https://code.google.com/p/jasagerpwn-reborn/issues/entry
