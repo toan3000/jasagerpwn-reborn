@@ -5,7 +5,7 @@
 #
 ########## Hard Coded / Dynamic Variables #
 version="2.0"
-rev="25"
+rev="27" # dev branch revision
 badchoice="0"
 attack_running="0"
 deauth_running="0"
@@ -22,18 +22,22 @@ source src/system_modules/dependencies.sh
 # Get our attacks from the attack_modules directory
 
 # Parse command line options
-while getopts "i:p:m:uh" OPTIONS; do
+while getopts "i:p:m:uhd" OPTIONS; do
   case ${OPTIONS} in
     w     ) export windows_payload=${OPTARG};;
     m     ) export mac_payload=${OPTARG};;
     i     ) export pineapple_interface=${OPTARG};;
     u     ) update;;
+    d     ) debug;;
     h     ) help;;
     *     ) echo "[-] Unknown option.";;
   esac
 done
 
 function main(){  
+  # Get debug information if enabled
+  if [ ${debug} == "1" ]; then debug ; fi
+
   # Check our dependencies
   check_deps
   
@@ -42,7 +46,13 @@ function main(){
   rm src/attack_modules/*~ > /dev/null 2>&1 # Cleanup Kate temp files
   for x in $(ls -1 src/attack_modules | grep \.sh); do
     x_name=$(echo ${x} | awk -F\. '{print $1}')
-    echo -e "\e[01;34m[-]\e[00m Loading attack module: " ${x_name}
+    
+    if [ ${debug} == "1" ]; then
+      echo -e "\e[01;34m[-]\e[00m Loading attack module: " ${x_name} | tee -a ${debug_output}
+    else
+      echo -e "\e[01;34m[-]\e[00m Loading attack module: " ${x_name}
+    fi
+    
     # Load the attack module functions
     source "src/attack_modules/${x}"
     # Store our attack modules in a file for later
@@ -62,7 +72,6 @@ function main(){
   interface=$(ifconfig | grep ${pineapple_interface} | awk '{print $1}' | head -n 1)
   if [ "$interface" != "${pineapple_interface}" ]; then
     echo -e "\e[01;31m[!]\e[00m Error: The pineapple interface: ${pineapple_interface} was not found.."
-#     cleanup
   fi
   ###################################
 

