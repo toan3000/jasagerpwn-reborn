@@ -20,6 +20,7 @@ function cleanup(){
   rm -rf ${fakeupdate_www} > /dev/null 2>&1
   rm -rf ${clickjack_www} > /dev/null 2>&1
   rm /tmp/jasagerpwn_modules.tmp > /dev/null 2>&1
+  rm /tmp/browserpwn.rc  > /dev/null 2>&1
   
   # Kill Processes and Services
   xterm -geometry 75x10+464+446 -bg black -fg green -T "[JasagerPwn] v${version}" -e "kill -9 ${pid_mdk3} > /dev/null 2>&1" > /dev/null 2>&1
