@@ -39,10 +39,24 @@ function check_deps(){
   svncheck=`dpkg -l | grep subversion | awk '{print $2}' | head -n 1`
   terminatorcheck=`dpkg -l | grep terminator | awk '{print $2}' | head -n 1`
   
-  if [ ! ${apache2check} ] || [ ! ${apache2phpcheck} ] || [ ! ${sshpasscheck} ] || [ ! ${gitcheck} ] || [ ! "${terminatorcheck}" ] || [ ! "${svncheck}" ] ||  [ ! -e "$(which mdk3)" ] || [ ! -e "/opt/beef" ] || [ ! -e "$(which msfconsole)" ]; then
-    ask_install
+  if [ ${debug} == "1" ]; then
+
+    # Debug mode
+    if [ ! ${apache2check} ] || [ ! ${apache2phpcheck} ] || [ ! ${sshpasscheck} ] || [ ! ${gitcheck} ] || [ ! "${terminatorcheck}" ] || [ ! "${svncheck}" ] ||  [ ! -e "$(which mdk3)" ] || [ ! -e "/opt/beef" ] || [ ! -e "$(which msfconsole)" ]; then
+      ask_install
+    else
+      echo -e "\e[01;34m[-]\e[00m All dependencies were found. Full functionality will be available." | tee -a ${debug_output}
+    fi
+  
   else
-    echo -e "\e[01;34m[-]\e[00m All dependencies were found. Full functionality will be available."
+  
+    # Normal, non-debug mode.
+    if [ ! ${apache2check} ] || [ ! ${apache2phpcheck} ] || [ ! ${sshpasscheck} ] || [ ! ${gitcheck} ] || [ ! "${terminatorcheck}" ] || [ ! "${svncheck}" ] ||  [ ! -e "$(which mdk3)" ] || [ ! -e "/opt/beef" ] || [ ! -e "$(which msfconsole)" ]; then
+      ask_install
+    else
+      echo -e "\e[01;34m[-]\e[00m All dependencies were found. Full functionality will be available."
+    fi
+  
   fi
 
 }

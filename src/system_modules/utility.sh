@@ -29,8 +29,35 @@ function cleanup(){
   # Clear our IPtables
   iptables -F ; iptables -X  ; iptables -F -t nat ; iptables -X -t nat
   
-  echo -e "\e[01;34m[>]\e[00m Exiting Gracefully.."
+  if [ ${debug} == "1" ]; then
+    echo -e "\e[01;34m[>]\e[00m Exiting Gracefully.." | tee -a ${debug_output}
+  else
+    echo -e "\e[01;34m[>]\e[00m Exiting Gracefully.."  
+  fi
+  
   exit 1
+}
+
+# Gather debug information for troubleshooting
+function debug(){
+  # Get some infromation about the pineapple configuration
+  echo -e "\n--------PINEAPPLE SYSTEM INFORMATION--------\n" | tee ${debug_output}
+  sshpass -p ${pineapple_password} ssh -o StrictHostKeyChecking=no root@${pineapple_ip} 'iwconfig ; echo -e "\n\n" ; ifconfig -a ; echo -e "\n\n" ; ls /pineapple/components/infusions/ ; echo -e "\n\n" ; iptables -S ; echo -e "\n\n" ; iptables -S -t nat ; echo -e "\n\n"' | tee -a ${debug_output}
+
+  # Get some infromation about the attacker system configuration
+  echo -e "\n--------ATTACKER SYSTEM INFORMATION--------\n" | tee -a ${debug_output}  echo -e "\n\n" | tee -a ${debug_output}
+  ifconfig -a | tee -a ${debug_output} ;   echo -e "\n\n" | tee -a ${debug_output}
+  iwconfig | tee -a ${debug_output} ;   echo -e "\n\n" | tee -a ${debug_output}
+  lsb_release -a | tee -a ${debug_output} ;   echo -e "\n\n" | tee -a ${debug_output}
+  ping -c 3 ${pineapple_ip} | tee -a ${debug_output} ;   echo -e "\n\n" | tee -a ${debug_output}
+  which msfconsole | tee -a ${debug_output} ;   echo -e "\n\n" | tee -a ${debug_output}
+  which mdk3 | tee -a ${debug_output} ;   echo -e "\n\n" | tee -a ${debug_output}
+  ls /opt | tee -a ${debug_output} ;   echo -e "\n\n" | tee -a ${debug_output}
+  
+  # Get JasagerPwn configuration & information
+  cat "$(basename $0)" | tee -a ${debug_output} ;   echo -e "\n\n" | tee -a ${debug_output}
+  svn info | tee -a ${debug_output}
+  
 }
 
 # Update Code via SVN
@@ -53,6 +80,7 @@ function help(){
 
   Options:
    -h         :  Help Screen and Switches. More Information In top of script.
+   -d         :  Debug mode. This will gather system information, pause consoles, and log output.
    -u         :  Update JasagerPwn.
    -i         :  Pineapple Interface [EG: wlan0]
    -m         :  Mac Payload (.pkg) [For Fake Update]
@@ -64,6 +92,12 @@ function help(){
 # Run command on remote pineapple
 function pineapple_command(){
   echo -e "\n\e[01;34m[>]\e[00m Running Command on Pineapple: ${command}"
-#   xterm -hold -geometry 75x8+100+0 -T "Pineapple Command" -e "sshpass -p ${pineapple_password} ssh -o StrictHostKeyChecking=no root@${pineapple_ip} '${command}'"  
-  xterm -geometry 75x8+100+0 -T "Pineapple Command" -e "sshpass -p ${pineapple_password} ssh -o StrictHostKeyChecking=no root@${pineapple_ip} '${command}'"
+  
+  if [ ${debug} == "1" ]; then
+    xterm -hold -geometry 75x8+100+0 -T "Pineapple Command" -e "sshpass -p ${pineapple_password} ssh -o StrictHostKeyChecking=no root@${pineapple_ip} '${command}'"
+    sshpass -p ${pineapple_password} ssh -o StrictHostKeyChecking=no root@${pineapple_ip} '${command}' | tee -a ${debug_output}
+  else
+    xterm -geometry 75x8+100+0 -T "Pineapple Command" -e "sshpass -p ${pineapple_password} ssh -o StrictHostKeyChecking=no root@${pineapple_ip} '${command}'"
+  fi
+  
 }
