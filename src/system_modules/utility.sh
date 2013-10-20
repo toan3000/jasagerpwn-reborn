@@ -45,18 +45,22 @@ function debug(){
   sshpass -p ${pineapple_password} ssh -o StrictHostKeyChecking=no root@${pineapple_ip} 'iwconfig ; echo -e "\n\n" ; ifconfig -a ; echo -e "\n\n" ; ls /pineapple/components/infusions/ ; echo -e "\n\n" ; iptables -S ; echo -e "\n\n" ; iptables -S -t nat ; echo -e "\n\n"' | tee -a ${debug_output}
 
   # Get some infromation about the attacker system configuration
-  echo -e "\n--------ATTACKER SYSTEM INFORMATION--------\n" | tee -a ${debug_output}  echo -e "\n\n" | tee -a ${debug_output}
-  ifconfig -a | tee -a ${debug_output} ;   echo -e "\n\n" | tee -a ${debug_output}
-  iwconfig | tee -a ${debug_output} ;   echo -e "\n\n" | tee -a ${debug_output}
-  lsb_release -a | tee -a ${debug_output} ;   echo -e "\n\n" | tee -a ${debug_output}
-  ping -c 3 ${pineapple_ip} | tee -a ${debug_output} ;   echo -e "\n\n" | tee -a ${debug_output}
-  which msfconsole | tee -a ${debug_output} ;   echo -e "\n\n" | tee -a ${debug_output}
-  which mdk3 | tee -a ${debug_output} ;   echo -e "\n\n" | tee -a ${debug_output}
-  ls /opt | tee -a ${debug_output} ;   echo -e "\n\n" | tee -a ${debug_output}
+  echo -e "\n--------ATTACKER SYSTEM INFORMATION--------\n" ; echo -e "\n\n" | tee -a ${debug_output}
+  ifconfig -a | tee -a ${debug_output} ; echo -e "\n\n" | tee -a ${debug_output}
+  iwconfig | tee -a ${debug_output} ;  echo -e "\n\n" | tee -a ${debug_output}
+  lsb_release -a | tee -a ${debug_output} ; echo -e "\n\n" | tee -a ${debug_output}
+  ping -c 3 ${pineapple_ip} | tee -a ${debug_output} ; echo -e "\n\n" | tee -a ${debug_output}
+  which msfconsole | tee -a ${debug_output} ; echo -e "\n\n" | tee -a ${debug_output}
+  which mdk3 | tee -a ${debug_output} ; echo -e "\n\n" | tee -a ${debug_output}
+  ls /opt | tee -a ${debug_output} ; echo -e "\n\n" | tee -a ${debug_output}
+  cat /etc/default/keyboard | tee -a ${debug_output}
   
   # Get JasagerPwn configuration & information
-  cat "$(basename $0)" | tee -a ${debug_output} ;   echo -e "\n\n" | tee -a ${debug_output}
+  cat "$(basename $0)" | tee -a ${debug_output} ; echo -e "\n\n" | tee -a ${debug_output}
   svn info | tee -a ${debug_output}
+  for x in $(find . -type f -iname '*.sh'); do md5sum ${x} | tee -a ${debug_output} ; done
+  echo -e "\n\n"
+  cat /etc/default/keyboard ; echo -e "\n\n" | tee -a ${debug_output}
   
 }
 
