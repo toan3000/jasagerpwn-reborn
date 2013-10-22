@@ -84,7 +84,7 @@ function main(){
     cat src/banner.txt 2> /dev/null
     echo -e "\n\e[01;32m[*] Choose from the menu to toggle attacks [*]\e[00m\n"
     
-    if [ "${badchoice}" == "1" ] && [ "${choice1}" != "" ] && [ "${attack_running}" == "1" ] && [ "${deauth_running}" == "1" ]; then
+    if [ "${badchoice}" == "1" ] && [ "${choice1}" != "" ]; then
       echo -e "\n\e[01;31m[!]\e[00m Error: Please Choose From The Menu..\n"
     fi
     
@@ -108,7 +108,7 @@ function main(){
       title=$(echo ${entry1} | awk -F"title:" '{print $2}' | awk -F\, '{print $1}')
       name=$(echo ${entry1} | awk -F"name:" '{print $2}' | awk -F\, '{print $1}')
       status=$(echo ${entry1} | awk -F"${name}"_status:"" '{print $2}' | awk -F\, '{print $1}')
-      bindings=$(echo ${entry1} | awk -F"bindings:" '{print $2}' | awk -F\, '{print $1}')
+      bindings="$(echo ${entry1} | awk -F"bindings:" '{print $2}' | awk -F\, '{print $1}')"
       description=$(echo ${entry1} | awk -F"description:" '{print $2}' | awk -F\, '{print $1}')
 
       if [ $(echo ${status} | grep "1") ]; then
@@ -131,7 +131,7 @@ function main(){
     do
     
       # Get our bindings from the file for the case statement
-      bindings=$(echo ${entry} | awk -F"bindings:" '{print $2}' | awk -F\, '{print $1}')
+      bindings="$(echo ${entry} | awk -F"bindings:" '{print $2}' | awk -F\, '{print $1}')"
       shopt -s extglob
       case_extglob="+(${bindings}|${y})"
       
