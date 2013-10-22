@@ -97,7 +97,7 @@ Attack Vector Modules:
 -------------------
 Included Payloads
 -------------------
-I have included 2 of my most successful and effecient payloads for your use. One for Mac OSX,
+I have included 3 of my most successful and effecient payloads for your use. One for Mac OSX,
 and one for Windows - both will completely bypass signature based anti-virus and most behavioral
 HIPS as well.
 
