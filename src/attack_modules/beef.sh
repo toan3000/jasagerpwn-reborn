@@ -13,7 +13,7 @@ title="BeEF Hook Injector"
 # Create a description for menu
 description="BeEF Javascript Browser Hook"
 # Letter keys/commands to select item in menu
-bindings="H|h"
+bindings='H|h'
 #########################################
 
 # Variables

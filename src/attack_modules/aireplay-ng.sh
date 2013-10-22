@@ -9,7 +9,7 @@ title="Aireplay Script"
 # Create a description for menu
 description="Automated Aireplay-ng AP DeAuthentication"
 # Letter keys/commands to select item in menu
-bindings="A|a"
+bindings='A|a'
 #########################################
 
 # Variables

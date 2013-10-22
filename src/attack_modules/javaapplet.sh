@@ -10,7 +10,7 @@ title="Java Applet Redirect"
 # Create a description for menu
 description="Java Applet Redirect Phishing"
 # Letter keys/commands to select item in menu
-bindings="R|r"
+bindings='R|r'
 #########################################
 
 # Variables
