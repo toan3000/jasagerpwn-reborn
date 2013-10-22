@@ -10,7 +10,7 @@ title="MDK3"
 # Create a description for menu
 description="MDK3 DeAuthentication DoS"
 # Letter keys/commands to select item in menu
-bindings="M|m"
+bindings='M|m'
 #########################################
 
 # Variables

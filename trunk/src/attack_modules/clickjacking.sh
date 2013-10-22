@@ -13,7 +13,7 @@ title="Click Jacker"
 # Create a description for menu
 description="Click-Jacking Phishing"
 # Letter keys/commands to select item in menu
-bindings="C|c"
+bindings='C|c'
 #########################################
 
 # Variables

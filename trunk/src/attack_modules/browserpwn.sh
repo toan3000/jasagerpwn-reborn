@@ -8,7 +8,7 @@ title="BrowserPwn"
 # Create a description for menu
 description="Metasploit BrowserPwn Module"
 # Letter keys/commands to select item in menu
-bindings="B|b"
+bindings='B|b'
 #########################################
 
 # Variables

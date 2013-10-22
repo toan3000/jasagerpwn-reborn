@@ -13,7 +13,7 @@ title="Java Applet Injector"
 # Create a description for menu
 description="Java Applet Injection Phishing"
 # Letter keys/commands to select item in menu
-bindings="J|j"
+bindings='J|j'
 #########################################
 
 # Variables
