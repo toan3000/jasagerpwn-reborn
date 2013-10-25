@@ -44,6 +44,6 @@ function start_beefhook(){
 function stop_beefhook(){
   echo -e "\e[01;34m[>]\e[00m Stopping BeEF Javascript Hook Injection Attack..."  
   kill -9 ${pid_beef} > /dev/null 2>&1
-  command="cd /pineapple/components/infusions/codeinject/includes/ ; bash stop.sh"
+  command="cd /pineapple/components/infusions/strip-n-inject/includes/ ; bash stop.sh"
   pineapple_command
 }
