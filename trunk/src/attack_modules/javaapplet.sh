@@ -6,7 +6,7 @@
 
 ################ Module Configuration ##
 # Module Title
-title="Java Applet Redirect"
+title="[Redirect] Java Applet"
 # Create a description for menu
 description="Java Applet Redirect Phishing"
 # Letter keys/commands to select item in menu

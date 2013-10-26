@@ -9,7 +9,7 @@
 
 ################ Module Configuration ##
 # Module Title
-title="BeEF Hook Injector"
+title="[Inject] BeEF Hook Injector"
 # Create a description for menu
 description="BeEF Javascript Browser Hook"
 # Letter keys/commands to select item in menu

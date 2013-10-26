@@ -6,7 +6,7 @@
 
 ################ Module Configuration ##
 # Module Title
-title="Fake Update"
+title="[Redirect] Fake Update"
 # Create a description for menu
 description="Fake System Update Phishing"
 # Letter keys/commands to select item in menu

@@ -5,7 +5,7 @@
 #
 ################ Module Configuration ##
 # Module Title
-title="Aireplay Script"
+title="[DeAuth] Aireplay Script"
 # Create a description for menu
 description="Automated Aireplay-ng AP DeAuthentication"
 # Letter keys/commands to select item in menu

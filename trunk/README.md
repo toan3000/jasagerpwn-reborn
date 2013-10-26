@@ -54,7 +54,7 @@ Compatibility / Troubleshooting
 - This script was developed in crunchbang linux (debian). That means it will very likley work
   with most debian based distributions such as Ubuntu, Debian, Linux Mint, and Kali Linux.
 
-- Any "injection" based attack vector will require the "CodeInject" infusion that is available
+- Any "injection" based attack vector will require the "Strip-N-Inject" infusion that is available
   in the pineapple bar. This include: Java Applet Injector, Click Jacking, and BeEf Hook.
 
 -----------------------
@@ -64,17 +64,21 @@ Attack Vector Modules:
 	- Victim Support: Mac OSX, Windows, Linux.
 	- Requirements: Metasploit, DNSSpoof Infusion.
 
+   - browserPwn iFrame - Inject a malicous iFrame into a browser that loads metasploit browserpwn modules.
+	- Victim Support: Mac OSX, Windows, Linux.
+	- Requirements: Metasploit, Strip-N-Inject Infusion.
+
    - Fake Update - Redirect LAN to a realistic fake update page with a [custom] payload download.
 	- Victim Support: Mac OSX, Windows.
 	- Requirements: Metasploit, DNSSpoof Infusion.
 
    - Click Jacking - Hijack the entire DOM with an injected <div>. No matter where you click, it downloads a payload.
 	- Victim Support: Mac OSX, Windows.
-	- Requirements: Metasploit, CodeInject Infusion.
+	- Requirements: Metasploit, Strip-N-Inject Infusion.
 
    - Java Applet Injection - Transparently inejcts an OS agnostic java applet into the victims browsing session.
 	- Victim Support: Mac OSX, Windows, Linux.
-        - Requirements: Metasploit, CodeInject Infusion.
+        - Requirements: Metasploit, Strip-N-Inject Infusion.
 
    - Java Applet Redirect - Redirects users to a Java page with an OS agnostic java applet payload.
 	- Victim Support: Mac OSX, Windows, Linux.
@@ -97,7 +101,7 @@ Attack Vector Modules:
 -------------------
 Included Payloads
 -------------------
-I have included 3 of my most successful and effecient payloads for your use. One for Mac OSX,
+I have included some of my most successful and effecient payloads for your use. One for Mac OSX,
 and one for Windows - both will completely bypass signature based anti-virus and most behavioral
 HIPS as well.
 

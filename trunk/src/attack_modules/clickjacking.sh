@@ -9,7 +9,7 @@
 
 ################ Module Configuration ##
 # Module Title
-title="Click Jacker"
+title="[Inject] Click Jacker"
 # Create a description for menu
 description="Click-Jacking Phishing"
 # Letter keys/commands to select item in menu

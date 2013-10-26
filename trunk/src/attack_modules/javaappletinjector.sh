@@ -9,7 +9,7 @@
 
 ################ Module Configuration ##
 # Module Title
-title="Java Applet Injector"
+title="[Inject] Java Applet"
 # Create a description for menu
 description="Java Applet Injection Phishing"
 # Letter keys/commands to select item in menu
