@@ -22,7 +22,7 @@ pineapple_mac="00:11:22:33:44:55"
 
 # [Payload Information]
 # Custom Windows Payload (blank will default to metasploit)
-windows_payload="payloads/inject.exe"
+windows_payload="payloads/shellcode-tcp.exe"
 # Custom Mac PKG Payload - can be created with "osx_payload_installer" in the resources/ directory.
 mac_payload="payloads/Apple_MacOSX_Update.pkg"
 # Port for  Mac reverse shells
