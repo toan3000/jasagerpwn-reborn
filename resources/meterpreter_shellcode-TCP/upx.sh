@@ -4,8 +4,8 @@
 if [ ! "$(which upx)" ]; then echo "You need to apt-get install upx..." ; exit 0 ; fi
 
 
-in="dist/inject.exe"
-out="dist/inject-upx.exe"
+in="dist/shellcodeexec.exe"
+out="dist/shellcodeexec-upx.exe"
 
 rm ${out} 2> /dev/null
 
