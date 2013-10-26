@@ -6,7 +6,7 @@
 
 ################ Module Configuration ##
 # Module Title
-title="SSLStrip"
+title="[Creds] SSLStrip"
 # Create a description for menu
 description="SSLStrip Password Harvester"
 # Letter keys/commands to select item in menu

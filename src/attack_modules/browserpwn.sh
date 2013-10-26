@@ -4,7 +4,7 @@
 # Author: Leg3nd @ https://leg3nd.me
 #
 ################ Module Configuration ##
-title="BrowserPwn"
+title="[Redirect] BrowserPwn"
 # Create a description for menu
 description="Metasploit BrowserPwn Module"
 # Letter keys/commands to select item in menu
@@ -33,8 +33,8 @@ function start_browserpwn(){
 
   terminator -e "msfconsole -r /tmp/browserpwn.rc" > /dev/null 2>&1 &
   
-  echo -e "\e[01;34m[>]\e[00m Sleeping while exploit modules load..."
-  sleep 2m
+  echo -e "\e[01;34m[>]\e[00m Sleeping 5min while exploit modules load..."
+  sleep 5m
   
   # Set DNSspoof on the pineapple
   echo -e "\e[01;34m[>]\e[00m Enabling dnsspoof on the pineapple.."    
