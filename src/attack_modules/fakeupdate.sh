@@ -121,7 +121,7 @@ function start_fakeupdate(){
   
   # Set DNSspoof on the pineapple
   echo -e "\e[01;34m[>]\e[00m Enabling dnsspoof on the pineapple.."    
-  command="mkdir /pineapple/config ; echo \"${our_ip} *\" > /pineapple/config/spoofhost"
+  command="echo \"${our_ip} *\" > /etc/pineapple/spoofhost"
   pineapple_command
   command="bash /pineapple/components/infusions/dnsspoof/includes/autostart.sh"
   pineapple_command
